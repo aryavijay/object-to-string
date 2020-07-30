@@ -31,12 +31,8 @@ const getObjectString = (obj, returnType = 'HTML') => {
     return stringToReturn;
 };
 
-const getStringForKey =()=>{
 
-};
 
-console.log(getObjectString(sampleObj, 'CONSOLE'));
-
-module.exports = {
+module.exports.obj2String = {
     getObjectString
 };
