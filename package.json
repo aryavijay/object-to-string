@@ -1,0 +1,31 @@
+{
+  "name": "object-to-string",
+  "version": "1.0.0",
+  "description": "Convert javascript object to readable string for Email and terminal",
+  "main": "bin/index.js",
+  "scripts": {
+    "start": "nodemon bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aryavijay/object-to-string.git"
+  },
+  "keywords": [
+    "object",
+    "string",
+    "html",
+    "termial",
+    "console"
+  ],
+  "author": "Vijay Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aryavijay/object-to-string/issues"
+  },
+  "homepage": "https://github.com/aryavijay/object-to-string#readme",
+  "dependencies": {
+    "jshint": "^2.11.2",
+    "nodemon": "^2.0.4"
+  }
+}
