@@ -1,5 +1,5 @@
 {
-  "name": "object-to-string",
+  "name": "obect-to-string",
   "version": "1.0.0",
   "description": "Convert javascript object to readable string for Email and terminal",
   "main": "bin/index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aryavijay/object-to-string.git"
+    "url": "git+https://github.com/aryavijay/object-2-string.git"
   },
   "keywords": [
     "object",
@@ -24,7 +24,8 @@
     "url": "https://github.com/aryavijay/object-to-string/issues"
   },
   "homepage": "https://github.com/aryavijay/object-to-string#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "jshint": "^2.11.2",
     "nodemon": "^2.0.4"
   }

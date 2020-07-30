@@ -31,8 +31,6 @@ const getObjectString = (obj, returnType = 'HTML') => {
     return stringToReturn;
 };
 
-
-
-module.exports.obj2String = {
+module.exports = {
     getObjectString
 };
