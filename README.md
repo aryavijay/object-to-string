@@ -11,7 +11,7 @@ This package has two  function
 
 Example:
 <code>
-const objToStr = require('obect-to-string');
+const objToStr = require('js-obj-to-str');
 
 const testSub = {
     "type": 2,
