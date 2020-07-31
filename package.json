@@ -1,6 +1,6 @@
 {
-  "name": "obect-to-string",
-  "version": "1.0.3",
+  "name": "js-obj-to-str",
+  "version": "1.0.1",
   "description": "Convert javascript object to readable string for Email and terminal",
   "main": "bin/index.js",
   "scripts": {
