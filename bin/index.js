@@ -1,16 +1,14 @@
 /*
 * obj: sample Object
-* returnType: HTML or CONSOLE
 */
 const getObjectStringHtml = (obj) => {
     let keys = Object.keys(obj);
     let stringToReturn = "";
     keys.map(key => {
-        let keyToInt = parseInt(key, 10);
-        if (!isNaN(keyToInt)) {
-            stringToReturn += `<p>====${key}====<p>${getObjectString(obj[key], returnType)}</p></p>`;
+        if (Array.isArray(obj[key])) {
+            stringToReturn += `<p>====${key}====<p>${getObjectStringHtml(obj[key])}</p></p>`;
         } else if (typeof obj[key] === 'object') {
-            stringToReturn += `<p> <u>${key.toUpperCase()}</u> <p>${getObjectString(obj[key], returnType)}</p></p>`;
+            stringToReturn += `<p> <u>${key.toUpperCase()}</u> <p>${getObjectStringHtml(obj[key])}</p></p>`;
         } else {
             stringToReturn += `<p> ${key} = ${obj[key]}</p>`;
         }
@@ -18,16 +16,17 @@ const getObjectStringHtml = (obj) => {
     return stringToReturn;
 };
 
-
+/*
+* obj: sample Object
+*/
 const getObjectStringConsole = (obj) => {
     let keys = Object.keys(obj);
     let stringToReturn = "";
     keys.map(key => {
-        let keyToInt = parseInt(key, 10);
-        if (!isNaN(keyToInt)) {
-            stringToReturn += `\n====${key}====\n${getObjectString(obj[key], returnType)}`;
+        if (Array.isArray(obj[key])) {
+            stringToReturn += `\n====${key}====\n${getObjectStringConsole(obj[key])}`;
         } else if (typeof obj[key] === 'object') {
-            stringToReturn += `\n${key.toUpperCase()}  \n${getObjectString(obj[key], returnType)}\n`;
+            stringToReturn += `\n${key.toUpperCase()}  \n${getObjectStringConsole(obj[key])}\n`;
         } else {
             stringToReturn += `${key} = ${obj[key]}\n`;
         }

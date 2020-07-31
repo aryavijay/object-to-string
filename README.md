@@ -10,8 +10,8 @@ This package has two  function
 
 
 Example:
-
- const objToStr = require('obect-to-string');
+<code>
+const objToStr = require('obect-to-string');
 
 const testSub = {
     "type": 2,
@@ -29,6 +29,7 @@ Output:
 console.log(objToStr.getObjectStringConsole(testSub));
 
 Output:
-type = 2
-value = test
-address = string
+type = 2 <br />
+value = test <br />
+address = string <br />
+</code>
